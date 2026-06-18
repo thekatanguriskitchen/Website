@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Katanguri’s Kitchen — No Dine‑in, Only Divine</title>
+  <meta name="description" content="The Katanguri’s Kitchen — Authentic South Indian cloud kitchen in Hanamkonda. Biryani, starters, catering, and homemade veg & non‑veg pickles. Order on Zomato, Swiggy, or call for direct delivery." />
+  <style>
+    /* --- Brand Palette --- */
+    :root{
+      --cream:#f1e7d7;
+      --deep-cream:#e7d8c2;
+      --green:#4f624d;
+      --terracotta:#8f5536;
+      --cocoa:#3b2b25;
+      --ink:#2b2725;
+      --muted:#6a5f59;
+    }
+
+    *{box-sizing:border-box}
+    body{
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      margin:0; color:var(--ink); background:var(--cream);
+    }
+
+    /* Header */
+    header{
+      background: linear-gradient(90deg, var(--green), var(--terracotta));
+      color:#fff; padding: 1.3rem 1rem; text-align:center;
+      border-bottom: 4px solid rgba(0,0,0,.06);
+    }
+    header .wrap{max-width:1000px; margin:auto; display:flex; align-items:center; gap:20px; justify-content:center;}
+    header img{
+      width:120px; height:120px; 
+      border-radius:12px; object-fit:contain;
+      background:#fff; padding:8px;
+      box-shadow:0 8px 28px rgba(0,0,0,.35)
+    }
+    header h1{margin:.2rem 0 0; font-size:2.2rem; letter-spacing:.3px}
+    header p{margin:.3rem 0 0; font-style:italic; font-size:1.1rem}
+
+    main{max-width:1000px; margin:auto; padding: 1.6rem 1rem 2.4rem}
+    section{margin: 1.8rem 0}
+    h2{color:var(--cocoa); margin:.2rem 0 .6rem}
+
+    /* Hero */
+    .hero{background:var(--deep-cream); border:1px solid rgba(0,0,0,.06); border-radius:18px; padding:1.4rem 1.2rem; text-align:center}
+    .hero h2{font-size:1.8rem}
+    .tagline{display:flex; flex-wrap:wrap; gap:.6rem; margin:1rem 0 .3rem; justify-content:center}
+    .pill{background:#fff; color:var(--cocoa); border:1px solid rgba(0,0,0,.08); padding:.45rem .8rem; border-radius:999px; font-size:.95rem}
+
+    /* Lists */
+    ul{list-style:none; padding:0; margin:.4rem 0}
+    ul li{padding-left:1.4rem; position:relative; margin:.5rem 0; color:var(--ink)}
+    ul li::before{content:"✔"; position:absolute; left:0; color:var(--terracotta); font-weight:bold}
+
+    /* Platforms */
+    .platforms{display:flex; flex-wrap:wrap; gap:.7rem; justify-content:flex-start; margin-top:.5rem}
+    .platforms span{display:inline-block; padding:.6rem 1rem; border-radius:10px; background:#fff; border:1px solid rgba(0,0,0,.08); font-weight:600; color:var(--green)}
+
+    /* Contact */
+    .contact a{color:var(--terracotta); text-decoration:none}
+    .contact .cards{display:grid; grid-template-columns:1fr; gap:.8rem}
+    .contact .card{background:#fff; border:1px solid rgba(0,0,0,.08); border-radius:14px; padding:1rem; font-size:1rem}
+
+    footer{background:#f0e6d5; border-top:1px solid rgba(0,0,0,.08); text-align:center; color:var(--muted); padding:1.2rem; font-size:.95rem}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <img src="logo.png" alt="The Katanguri’s Kitchen Logo" />
+      <div>
+        <h1>The Katanguri’s Kitchen</h1>
+        <p>No Dine‑in, Only Divine</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>South Indian flavours, crafted with care.</h2>
+      <div class="tagline">
+        <span class="pill">Chef‑led • 15+ years experience</span>
+        <span class="pill">Cooked fresh to order</span>
+        <span class="pill">Packed hot and handled hygienically</span>
+        <span class="pill">From our hearth in Hanamkonda to your home</span>
+      </div>
+      <p><em>“Every bite should remind you of home, every box should carry our promise of taste.”</em></p>
+    </section>
+
+    <section>
+      <h2>About Us</h2>
+      <p>Welcome to <strong>The Katanguri’s Kitchen</strong> — a cloud kitchen devoted to authentic, homestyle South Indian taste. Though new to the market, we’re powered by a chef with over <strong>15 years</strong> in top restaurants. Our promise is simple: <em>quality ingredients, honest spice, consistent taste</em>.</p>
+    </section>
+
+    <section>
+      <h2>Delivery Platforms</h2>
+      <div class="platforms">
+        <span>Zomato</span>
+        <span>Swiggy</span>
+        <span>Direct Delivery (within city)</span>
+      </div>
+      <p style="color:var(--muted); margin-top:.7rem">Call us for bulk orders, festive packs, and party platters.</p>
+    </section>
+
+    <section>
+      <h2>Our Services</h2>
+      <ul>
+        <li>Catering for small parties and events — punctual, portioned, and ready to serve</li>
+        <li>Home delivery of veg & non‑veg pickles — small‑batch, flavour‑forward</li>
+        <li>Spicy South Indian delights — biryani, starters, and seasonal specials</li>
+      </ul>
+      <p style="color:var(--muted)">Good food travels well: we seal every box to keep aromas in and spills out.</p>
+    </section>
+
+    <section>
+      <h2>Why Choose Us?</h2>
+      <ul>
+        <li>Professional chef with 15+ years restaurant experience</li>
+        <li>Authentic recipes, Telangana heart — no shortcuts</li>
+        <li>Fresh, hygienic, and delivered hot — every time</li>
+      </ul>
+      <p style="color:var(--muted)">One call for comfort food, celebrations, and everything in between.</p>
+    </section>
+
+    <section class="contact">
+      <h2>Contact Us</h2>
+      <div class="cards">
+        <div class="card">📧 Email: <a href="mailto:thekatanguriskitchen@gmail.com">thekatanguriskitchen@gmail.com</a></div>
+        <div class="card">📞 Mobile: <a href="tel:9347968582">9347968582</a></div>
+        <div class="card">📍 Address: 23-6-226/2, Hunter Road, Hanamkonda, Telangana</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <script>document.write(new Date().getFullYear())</script> The Katanguri’s Kitchen · No Dine‑in, Only Divine
+  </footer>
+</body>
+</html>
