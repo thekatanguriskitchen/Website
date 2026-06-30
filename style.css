@@ -1,0 +1,1720 @@
+/* =====================================================
+   THE KATANGURI'S KITCHEN
+   Premium Restaurant Website
+======================================================*/
+
+:root{
+
+    --primary:#5D4037;
+    --secondary:#C0392B;
+    --accent:#F4B400;
+    --cream:#FFF8F0;
+    --dark:#1E1E1E;
+    --light:#ffffff;
+    --gray:#777;
+    --shadow:0 15px 40px rgba(0,0,0,.12);
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    background:var(--cream);
+    color:var(--dark);
+    overflow-x:hidden;
+
+}
+
+img{
+
+    width:100%;
+    display:block;
+
+}
+
+a{
+
+    text-decoration:none;
+
+}
+
+section{
+
+    padding:90px 0;
+
+}
+
+h1,h2,h3,h4,h5,h6{
+
+    font-weight:700;
+
+}
+
+p{
+
+    color:#555;
+    line-height:1.8;
+
+}
+
+.container{
+
+    max-width:1200px;
+
+}
+
+/* ===========================
+        NAVBAR
+=========================== */
+
+.navbar{
+
+    background:rgba(255,255,255,.96);
+    backdrop-filter:blur(14px);
+    transition:.4s;
+    padding:14px 0;
+    z-index:999;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.06);
+
+}
+
+.navbar.scrolled{
+
+    padding:8px 0;
+
+}
+
+.navbar-brand{
+
+    display:flex;
+    align-items:center;
+
+}
+
+.navbar-brand img{
+
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid var(--accent);
+
+}
+
+.navbar-brand h3{
+
+    margin:0;
+    font-size:23px;
+    color:var(--primary);
+    font-weight:700;
+
+}
+
+.navbar-brand span{
+
+    font-size:13px;
+    color:var(--gray);
+
+}
+
+.navbar-nav .nav-link{
+
+    margin-left:18px;
+    color:#333;
+    font-weight:500;
+    transition:.3s;
+
+}
+
+.navbar-nav .nav-link:hover{
+
+    color:var(--secondary);
+
+}
+
+.navbar .btn{
+
+    border-radius:50px;
+    padding:10px 22px;
+    font-weight:600;
+
+}
+
+/* ===========================
+        HERO
+=========================== */
+
+.hero{
+
+    position:relative;
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    background:url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1800") center center/cover no-repeat;
+
+    overflow:hidden;
+
+}
+
+.hero .overlay{
+
+    position:absolute;
+
+    width:100%;
+    height:100%;
+
+    background:linear-gradient(to right,
+    rgba(0,0,0,.82),
+    rgba(0,0,0,.45));
+
+}
+
+.hero .container{
+
+    position:relative;
+    z-index:5;
+
+}
+
+.hero h5{
+
+    color:var(--accent);
+
+    letter-spacing:3px;
+
+    margin-bottom:20px;
+
+}
+
+.hero h1{
+
+    font-size:70px;
+
+    color:white;
+
+    margin-bottom:20px;
+
+    line-height:1.1;
+
+}
+
+.hero h2{
+
+    color:#fff;
+
+    font-size:32px;
+
+    margin-bottom:20px;
+
+    font-weight:500;
+
+}
+
+.hero p{
+
+    color:#ddd;
+
+    font-size:18px;
+
+    margin-bottom:35px;
+
+    max-width:600px;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+.hero-buttons .btn{
+
+    padding:15px 35px;
+
+    border-radius:40px;
+
+    font-size:17px;
+
+    font-weight:600;
+
+}
+
+.btn-warning{
+
+    background:var(--accent);
+
+    border:none;
+
+    color:#000;
+
+}
+
+.btn-warning:hover{
+
+    transform:translateY(-3px);
+
+    background:#ffcb32;
+
+}
+
+.btn-outline-light:hover{
+
+    color:#000;
+
+}
+
+/* Hero Food Image */
+
+.hero-food{
+
+    width:520px;
+
+    border-radius:30px;
+
+    box-shadow:0 25px 50px rgba(0,0,0,.45);
+
+    animation:float 4s ease-in-out infinite;
+
+}
+
+/* Delivery Icons */
+
+.delivery{
+
+    display:flex;
+
+    gap:30px;
+
+    margin-top:50px;
+
+    align-items:center;
+
+}
+
+.delivery div{
+
+    text-align:center;
+
+}
+
+.delivery img{
+
+    width:55px;
+
+    height:55px;
+
+    object-fit:contain;
+
+}
+
+.delivery i{
+
+    font-size:48px;
+
+    color:#fff;
+
+}
+
+.delivery p{
+
+    color:white;
+
+    margin-top:10px;
+
+    font-size:14px;
+
+}
+
+/* ===========================
+        ABOUT
+=========================== */
+
+.about{
+
+    background:white;
+
+}
+
+.about img{
+
+    border-radius:25px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.about h6{
+
+    color:var(--secondary);
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+    margin-bottom:15px;
+
+}
+
+.about h2{
+
+    font-size:42px;
+
+    margin-bottom:25px;
+
+    color:var(--primary);
+
+}
+
+.counter{
+
+    background:#fff7ef;
+
+    border-left:5px solid var(--accent);
+
+    padding:25px;
+
+    border-radius:15px;
+
+    margin-top:15px;
+
+}
+
+.counter h3{
+
+    font-size:42px;
+
+    color:var(--secondary);
+
+}
+
+.counter p{
+
+    margin:0;
+
+}
+
+/* ===========================
+        WHY US
+=========================== */
+
+.why-us{
+
+    background:#faf6f1;
+
+}
+
+.why-us h6{
+
+    color:var(--secondary);
+
+    letter-spacing:2px;
+
+}
+
+.why-us h2{
+
+    color:var(--primary);
+
+    margin-bottom:50px;
+
+}
+
+.feature-card{
+
+    background:white;
+
+    text-align:center;
+
+    padding:40px 25px;
+
+    border-radius:20px;
+
+    transition:.4s;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+
+    height:100%;
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+
+}
+
+.feature-card i{
+
+    font-size:55px;
+
+    color:var(--secondary);
+
+    margin-bottom:20px;
+
+}
+
+.feature-card h4{
+
+    margin-bottom:15px;
+
+}
+
+/* ===========================
+        SERVICES
+=========================== */
+
+.services{
+
+    background:white;
+
+}
+
+.services h6{
+
+    color:var(--secondary);
+
+    letter-spacing:2px;
+
+}
+
+.services h2{
+
+    color:var(--primary);
+
+    margin-bottom:50px;
+
+}
+
+.service-box{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:40px;
+
+    text-align:center;
+
+    transition:.4s;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    height:100%;
+
+}
+
+.service-box:hover{
+
+    transform:translateY(-10px);
+
+    background:var(--primary);
+
+}
+
+.service-box:hover h4,
+.service-box:hover p,
+.service-box:hover i{
+
+    color:white;
+
+}
+
+.service-box i{
+
+    font-size:60px;
+
+    color:var(--secondary);
+
+    margin-bottom:25px;
+
+}
+
+.service-box h4{
+
+    margin-bottom:20px;
+
+}
+
+/* ===========================
+        POPULAR FOOD
+=========================== */
+
+.popular-food{
+
+    background:#faf6f1;
+
+}
+
+.popular-food h6{
+
+    color:var(--secondary);
+
+    letter-spacing:2px;
+
+}
+
+.popular-food h2{
+
+    color:var(--primary);
+
+    margin-bottom:45px;
+
+}
+
+.food-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    transition:.4s;
+
+    box-shadow:0 15px 30px rgba(0,0,0,.08);
+
+}
+
+.food-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.food-card img{
+
+    height:230px;
+
+    object-fit:cover;
+
+}
+
+.food-card h4{
+
+    padding:20px;
+
+    text-align:center;
+
+    color:var(--primary);
+
+}
+
+/* ===========================
+        ANIMATION
+=========================== */
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-15px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+/*======================================================
+                MENU SECTION
+======================================================*/
+
+.menu-section{
+    background:#fff;
+}
+
+.menu-section h6{
+    color:var(--secondary);
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.menu-section h2{
+    color:var(--primary);
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.menu-section p{
+    color:#666;
+    margin-bottom:35px;
+}
+
+/* Menu Filter */
+
+.menu-filter{
+    margin-bottom:45px;
+}
+
+.menu-filter button{
+
+    border:none;
+
+    background:#fff;
+
+    color:#444;
+
+    padding:12px 25px;
+
+    margin:8px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.menu-filter button:hover{
+
+    background:var(--secondary);
+
+    color:#fff;
+
+    transform:translateY(-3px);
+
+}
+
+.menu-filter button.active{
+
+    background:var(--primary);
+
+    color:#fff;
+
+}
+
+/* Menu Card */
+
+.menu-card{
+
+    transition:.4s;
+
+}
+
+.menu-box{
+
+    background:#fff;
+
+    border-radius:22px;
+
+    padding:28px;
+
+    height:100%;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+    border-top:5px solid var(--accent);
+
+}
+
+.menu-box:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 25px 50px rgba(0,0,0,.15);
+
+}
+
+.menu-box h3{
+
+    color:var(--primary);
+
+    margin-bottom:25px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    font-size:26px;
+
+}
+
+.menu-box h3 i{
+
+    color:var(--secondary);
+
+}
+
+.menu-box ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+}
+
+.menu-box li{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:14px 0;
+
+    border-bottom:1px dashed #ddd;
+
+    transition:.3s;
+
+}
+
+.menu-box li:last-child{
+
+    border-bottom:none;
+
+}
+
+.menu-box li:hover{
+
+    padding-left:10px;
+
+    background:#fff8ef;
+
+    border-radius:10px;
+
+}
+
+.menu-box li span{
+
+    font-weight:500;
+
+    color:#333;
+
+}
+
+.menu-box li strong{
+
+    color:var(--secondary);
+
+    font-size:17px;
+
+}
+
+/*======================================================
+                GALLERY
+======================================================*/
+
+.gallery{
+
+    background:#faf6f1;
+
+}
+
+.gallery h6{
+
+    color:var(--secondary);
+
+    letter-spacing:2px;
+
+}
+
+.gallery h2{
+
+    color:var(--primary);
+
+    margin-bottom:12px;
+
+}
+
+.gallery-item{
+
+    overflow:hidden;
+
+    border-radius:20px;
+
+    position:relative;
+
+    box-shadow:0 15px 30px rgba(0,0,0,.10);
+
+}
+
+.gallery-item img{
+
+    width:100%;
+
+    height:280px;
+
+    object-fit:cover;
+
+    transition:.6s;
+
+}
+
+.gallery-item:hover img{
+
+    transform:scale(1.12);
+
+}
+
+.gallery-item::after{
+
+    content:'';
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.15);
+
+    opacity:0;
+
+    transition:.4s;
+
+}
+
+.gallery-item:hover::after{
+
+    opacity:1;
+
+}
+
+/*======================================================
+                REVIEWS
+======================================================*/
+
+.reviews{
+
+    background:white;
+
+}
+
+.reviews h6{
+
+    color:var(--secondary);
+
+    letter-spacing:2px;
+
+}
+
+.reviews h2{
+
+    color:var(--primary);
+
+    margin-bottom:50px;
+
+}
+
+.review-card{
+
+    background:#fff;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+    height:100%;
+
+    position:relative;
+
+}
+
+.review-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.review-card i{
+
+    font-size:40px;
+
+    color:var(--accent);
+
+    margin-bottom:20px;
+
+}
+
+.review-card p{
+
+    font-style:italic;
+
+    margin-bottom:25px;
+
+}
+
+.review-card h5{
+
+    color:#ffb400;
+
+    letter-spacing:2px;
+
+}
+
+/*======================================================
+                SECTION HEADINGS
+======================================================*/
+
+section h6{
+
+    font-weight:700;
+
+}
+
+section h2{
+
+    font-weight:700;
+
+}
+
+/*======================================================
+                SMALL ANIMATIONS
+======================================================*/
+
+.food-card,
+.feature-card,
+.service-box,
+.menu-box,
+.review-card,
+.gallery-item{
+
+    transition:all .35s ease;
+
+}
+
+/*======================================================
+                CUSTOM SCROLLBAR
+======================================================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#f2f2f2;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--secondary);
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--primary);
+
+}
+
+/*======================================================
+                CONTACT
+======================================================*/
+
+.contact{
+
+    background:#faf6f1;
+
+}
+
+.contact h6{
+
+    color:var(--secondary);
+
+    letter-spacing:2px;
+
+}
+
+.contact h2{
+
+    color:var(--primary);
+
+    margin-bottom:50px;
+
+}
+
+.contact-card{
+
+    background:#fff;
+
+    padding:28px;
+
+    border-radius:18px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.contact-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.contact-card h4{
+
+    color:var(--primary);
+
+    margin-bottom:15px;
+
+}
+
+.contact-card i{
+
+    color:var(--secondary);
+
+    margin-right:10px;
+
+}
+
+.contact-card a{
+
+    color:#333;
+
+    transition:.3s;
+
+}
+
+.contact-card a:hover{
+
+    color:var(--secondary);
+
+}
+
+.contact iframe{
+
+    border:0;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.12);
+
+}
+
+/*======================================================
+                FOOTER
+======================================================*/
+
+footer{
+
+    background:#1f1f1f;
+
+    color:#fff;
+
+    padding:70px 0 20px;
+
+}
+
+footer h3,
+footer h4{
+
+    color:#fff;
+
+    margin-bottom:20px;
+
+}
+
+footer p{
+
+    color:#ccc;
+
+}
+
+.footer-links{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+.footer-links li{
+
+    margin-bottom:12px;
+
+}
+
+.footer-links a{
+
+    color:#ccc;
+
+    transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+    color:var(--accent);
+
+    padding-left:6px;
+
+}
+
+.social-icons{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:20px;
+
+}
+
+.social-icons a{
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#fff;
+
+    transition:.35s;
+
+    font-size:18px;
+
+}
+
+.social-icons a:hover{
+
+    background:var(--secondary);
+
+    transform:translateY(-5px);
+
+}
+
+footer hr{
+
+    border-color:rgba(255,255,255,.15);
+
+    margin:40px 0 20px;
+
+}
+
+/*======================================================
+                FLOATING BUTTONS
+======================================================*/
+
+.whatsapp-btn{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:62px;
+
+    height:62px;
+
+    border-radius:50%;
+
+    background:#25D366;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#fff;
+
+    font-size:28px;
+
+    z-index:999;
+
+    text-decoration:none;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+    transition:.35s;
+
+}
+
+.whatsapp-btn:hover{
+
+    transform:scale(1.12);
+
+    color:white;
+
+}
+
+.call-btn{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:100px;
+
+    width:62px;
+
+    height:62px;
+
+    border-radius:50%;
+
+    background:#E53935;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:white;
+
+    font-size:24px;
+
+    z-index:999;
+
+    text-decoration:none;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+    transition:.35s;
+
+}
+
+.call-btn:hover{
+
+    transform:scale(1.12);
+
+    color:white;
+
+}
+
+#topBtn{
+
+    position:fixed;
+
+    left:25px;
+
+    bottom:25px;
+
+    width:55px;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    color:#fff;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    display:none;
+
+    z-index:999;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.20);
+
+    transition:.35s;
+
+}
+
+#topBtn:hover{
+
+    background:var(--secondary);
+
+}
+
+/*======================================================
+                BUTTONS
+======================================================*/
+
+.btn{
+
+    transition:.35s;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/*======================================================
+                IMAGE EFFECTS
+======================================================*/
+
+.hero-food,
+.food-card img,
+.gallery-item img{
+
+    transition:.5s;
+
+}
+
+.food-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/*======================================================
+                RESPONSIVE
+======================================================*/
+
+@media(max-width:1200px){
+
+.hero h1{
+
+font-size:58px;
+
+}
+
+.hero-food{
+
+width:450px;
+
+}
+
+}
+
+@media(max-width:992px){
+
+.navbar-brand h3{
+
+font-size:20px;
+
+}
+
+.hero{
+
+text-align:center;
+
+padding-top:120px;
+
+}
+
+.hero h1{
+
+font-size:48px;
+
+}
+
+.hero h2{
+
+font-size:28px;
+
+}
+
+.hero-food{
+
+width:100%;
+
+margin-top:40px;
+
+}
+
+.delivery{
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+}
+
+.hero-buttons{
+
+justify-content:center;
+
+}
+
+.about{
+
+text-align:center;
+
+}
+
+.counter{
+
+margin-bottom:20px;
+
+}
+
+.contact-card{
+
+margin-bottom:20px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+section{
+
+padding:70px 0;
+
+}
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+.hero h2{
+
+font-size:22px;
+
+}
+
+.hero p{
+
+font-size:16px;
+
+}
+
+.menu-filter button{
+
+margin:5px;
+
+padding:10px 16px;
+
+font-size:14px;
+
+}
+
+.menu-box{
+
+padding:20px;
+
+}
+
+.menu-box h3{
+
+font-size:22px;
+
+}
+
+.gallery-item img{
+
+height:220px;
+
+}
+
+.food-card img{
+
+height:220px;
+
+}
+
+.call-btn{
+
+right:15px;
+
+bottom:90px;
+
+}
+
+.whatsapp-btn{
+
+right:15px;
+
+bottom:18px;
+
+}
+
+#topBtn{
+
+left:15px;
+
+bottom:18px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.navbar-brand img{
+
+width:55px;
+
+height:55px;
+
+}
+
+.navbar-brand h3{
+
+font-size:18px;
+
+}
+
+.hero{
+
+min-height:90vh;
+
+}
+
+.hero h1{
+
+font-size:32px;
+
+}
+
+.hero h2{
+
+font-size:20px;
+
+}
+
+.hero-buttons .btn{
+
+width:100%;
+
+}
+
+.delivery{
+
+gap:15px;
+
+}
+
+.delivery img{
+
+width:42px;
+
+height:42px;
+
+}
+
+.delivery i{
+
+font-size:36px;
+
+}
+
+.counter{
+
+padding:20px;
+
+}
+
+.counter h3{
+
+font-size:30px;
+
+}
+
+.contact-card{
+
+padding:20px;
+
+}
+
+footer{
+
+text-align:center;
+
+}
+
+.social-icons{
+
+justify-content:center;
+
+}
+
+}
+
+/*======================================================
+                SELECTION
+======================================================*/
+
+::selection{
+
+background:var(--secondary);
+
+color:white;
+
+}
+
+/*======================================================
+                SMOOTH FADE
+======================================================*/
+
+.fade-up{
+
+animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+0%{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+100%{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
